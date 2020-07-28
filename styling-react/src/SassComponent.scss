@@ -1,12 +1,12 @@
-@import './styles/utils.scss';
+@import './styles/utils';
 .SassComponent{
-    display: flex;
-    .box{ //일반 CSS에서는 .SassComponent .box와 마찬가지
+    display:flex;
+    .box{
         background: red;
         cursor: pointer;
         transition: all 0.3s ease-in;
         &.red{
-            //.red 클래스가 .box와 함께 사용되었을 때
+            // .red 클래스가 .box와 함께 사용되었을 때
             background: $red;
             @include square(1);
         }
@@ -35,7 +35,6 @@
             @include square(7);
         }
         &:hover{
-            //.box에 마우스를 올렸을 때
             background: black;
         }
     }
